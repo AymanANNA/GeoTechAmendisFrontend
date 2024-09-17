@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 10px;  // Base font size, can adjust if needed
+}
+
+.login-section {
+    background-color: #00adc7;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.login-logo {
+    width: 180px;  // Adjusted for a slightly larger but reasonable size
+    margin-bottom: 2.5rem; // Sufficient space between logo and auth box
+}
+
+.auth {
+    background-color: rgba(255, 255, 255, 0.7); // Slightly less transparency for better visibility
+    padding: 2.5rem;  // Balanced padding
+    border-radius: 1rem;  // Smooth corners
+    min-width: 36rem;  // Slightly larger width for a more spacious layout
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  // Subtle shadow for depth
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.auth h1 {
+    font-size: 2.8rem;  // Slightly larger for emphasis
+    text-align: center;
+    margin-bottom: 2rem;  // Adequate spacing after heading
+}
+
+.auth form {
+    width: 100%;
+}
+
+.auth input {
+    width: 100%;
+    margin-top: 1.2rem;  // Moderate spacing between inputs
+    padding: 1rem;  // Comfortable padding
+    font-size: 1.5rem;  // Improved readability without being too large
+    border: none;
+    border-radius: 0.5rem;  // Tastefully rounded
+    outline: none;
+    border-bottom: 2px solid transparent;
+
+    &:hover, &:focus {
+        border-bottom: 2px solid #0086da;
+    }
+}
+
+.auth button[type="submit"] {
+    width: 100%;
+    padding: 1.2rem;  // Comfortable to press without being too thick
+    margin-top: 2.5rem;  // Clears the inputs nicely
+    border-radius: 1rem;  // Consistent with other elements
+    background-color: #00adc7;
+    color: white;
+    font-size: 1.7rem;  // Large enough to be easily readable
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken(#00adc7, 10%);
+    }
+}
+
+.auth p {
+    color: red;
+    font-size: 1.4rem;  // Clear but not overpowering
+    text-align: center;
+    margin-top: 1rem;  // Separates error messages nicely from other content
+}
+
+/* Styles for Forgot Password link */
+.forgot-password {
+    margin-top: 1rem; /* Spacing above the link */
+    text-align: right; /* Align the link to the right of the form */
+    width: 100%;
+}
+
+.forgot-password-button {
+    background: none;
+    border: none;
+    color: #00adc7;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 0;
+}
+
+.forgot-password-button:hover {
+    text-decoration: underline;
+}

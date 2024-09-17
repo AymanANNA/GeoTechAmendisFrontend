@@ -1,0 +1,72 @@
+.real-time-path {
+  background-color: #00adc7; // Light teal background
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+
+    h1 {
+      color: white;
+      margin-bottom: 8px;
+      font-size: 20px;
+    }
+
+    p {
+      color: white;
+      margin-top: 3px;
+      font-size: 16px;
+    }
+
+    .filters, .actions {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 8px;
+
+      select, input, button {
+        padding: 4px 10px;
+        border: none;
+        border-radius: 4px;
+        font-size: 14px;
+      }
+
+      button {
+        background-color: white;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: #e0f7fa;
+        }
+      }
+
+      .map-view-button {
+        background-color: #4CAF50; // Green color for Map View
+        color: white;
+
+        &:hover {
+          background-color: #45a049; // Darker green on hover
+        }
+      }
+
+      .location-list-button {
+        background-color: #2196F3; // Blue color for Location List
+        color: white;
+
+        &:hover {
+          background-color: #1e88e5; // Darker blue on hover
+        }
+      }
+    }
+  }
+
+  .map-container {
+    height: 480px;
+    background-color: #fff;
+  }
+}
+
+#hh{
+  height: 100vh;
+}

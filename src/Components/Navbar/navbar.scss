@@ -1,0 +1,79 @@
+$icon_color: #00adc7;
+$text_color: #3d3c42;
+
+.navbar {
+  .navbar_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; // Adjusted padding
+    height: 59px; // Set fixed height for a slimmer navbar
+    background-color: #00adc7;
+    color: white;
+    border-bottom: 1px solid #eee;
+    
+
+    .logo_container {
+      img.navbar_logo {
+        width: 120px; // Smaller logo
+        height: auto;
+        cursor: pointer;
+      }
+    }
+
+    .menu_logo {
+      display: flex;
+      align-items: center;
+
+      .menu_icon {
+        cursor: pointer;
+        color: #3d3c42e1;
+      }
+
+      .text_none {
+        margin-left: 10px;
+        color: #4665fdde;
+      }
+    }
+
+    .item_lists {
+      display: flex;
+      align-items: center;
+
+      .item {
+        margin-left: 15px;
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        .item_icon {
+          font-size: 20px; // Slightly smaller icons
+          cursor: pointer;
+        }
+
+        .admin_pic {
+          width: 25px; // Smaller admin picture
+          height: 25px;
+          border-radius: 50%;
+          object-fit: cover;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .navbar {
+    .navbar_main {
+      padding: 8px 10px;
+      .logo_container {
+        order: -1; // Logo first on mobile
+        margin-left: 10px;
+        img.navbar_logo {
+          width: 50px;
+        }
+      }
+    }
+  }
+}

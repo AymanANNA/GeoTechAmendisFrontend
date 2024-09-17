@@ -1,0 +1,36 @@
+.leaflet-conatiner{
+    height: 100vh;
+}
+
+#hh{
+    height: 100vh;
+}
+
+.list_page {
+    display: grid;
+    grid-template-columns: 17% 83%;
+    justify-content: center;
+    width: 100%;
+}
+
+#hh {
+    position: relative;  /* This makes it a positioning root for absolute children */
+    height: 100vh;
+  }
+  
+  .leaflet-container {
+    height: 100%;  /* This should be 100% to fill its container */
+  }
+  
+  .technician-status-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000; /* Higher than the map */
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 250px; /* Adjust based on content */
+  }
+  
